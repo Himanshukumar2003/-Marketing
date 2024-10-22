@@ -275,6 +275,26 @@ a {
 
 
 
+.transparent .nav-link.active {
+    color: red !important;
+    font-weight: 500;
+}
+
+.transparent .btn-dark-color {
+background-color: var(--red-color);
+}
+
+
+
+
+#navbar{
+    position: fixed;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+}
+
 
 
 
@@ -296,7 +316,7 @@ a {
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--accent-color);
+    color:black;
 }
 
 .navbar-nav .nav-link.active {
@@ -1714,6 +1734,7 @@ a.link:hover {
 .card img{
     border-radius: 12px;
     overflow: hidden;
+    object-fit: contain;
         transition: transform 0.5s ease-in-out;
 }
 
@@ -1722,6 +1743,9 @@ a.link:hover {
 .card{
     height: 400px;
     overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 2px;
+    border: 3px solid var(--accent-color);
 }
 
 

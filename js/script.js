@@ -15,12 +15,12 @@ $(window).ready(function () {
   });
 });
 
-// window.onscroll = function () {
-//   const navbar = document.getElementById("navbar");
+window.onscroll = function () {
+  const navbar = document.getElementById("navbar");
 
-//   if (window.scrollY > 100) {
-//     navbar.classList.remove("transparent");
-//   } else {
-//     navbar.classList.add("transparent");
-//   }
-// };
+  if (window.scrollY > 200) {
+    navbar.classList.remove("transparent");
+  } else {
+    navbar.classList.add("transparent");
+  }
+};
