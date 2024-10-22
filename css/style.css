@@ -50,7 +50,8 @@
 
 
 :root {
-    --red-color: #ff0404;
+    --red-color: #ef2422;
+    --light-red-color: #ff0404;
     --dark-color: #0b1f23;
     --light-color: #f9f9f9;
     --secondary-color: #151515;
@@ -115,7 +116,7 @@ ul li a {
 }
 
 .logo{
-    width: 200px;
+    width: 180px;
     border-radius: 20px;
     object-fit: contain !important;
 }
@@ -281,10 +282,14 @@ a {
 }
 
 .transparent .btn-dark-color {
-background-color: var(--red-color);
+background-color: var(--light-red-color);
 }
 
 
+
+.transparent .navbar-nav .nav-link:hover {
+    color: red !important;
+}
 
 
 #navbar{
@@ -294,7 +299,6 @@ background-color: var(--red-color);
     width: 100%;
     z-index: 1020;
 }
-
 
 
 
@@ -474,7 +478,7 @@ background-color: var(--red-color);
 }
 
 .btn-accent {
-    background-color: #ef2422;
+    background-color:ver(--light-red-color);
     color: white;
     transition: all 0.5s;
 }
@@ -1731,29 +1735,28 @@ a.link:hover {
 
 
 
-.card img{
-    border-radius: 12px;
-    overflow: hidden;
-    object-fit: contain;
-        transition: transform 0.5s ease-in-out;
-}
-
-
-
-.card{
+.marketing-img-card {
     height: 400px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2px;
     border: 3px solid var(--accent-color);
+    transition: transform 0.8s ease-in-out; /* Slower transition */
 }
 
+.marketing-img-card img {
+    overflow: hidden;
+    height: fit-content;
+    object-fit: contain;
+    transition: transform 0.8s ease-in-out; /* Slower transition for the image */
+}
 
-
-.card img:hover{
+.marketing-img-card:hover {
     transform: scale(1.10);
     z-index: 99;
 }
+
 
 
 .card-right-upper {
@@ -1771,18 +1774,18 @@ a.link:hover {
 }
 
 @media (max-width: 767px) {
-    .card {
+    .marketing-img-card {
         margin-bottom: 0px; 
     }
 }
 
 
-.card img{
-    height: 100%;
+
+
+ .boder-line {
+    border: 3px solid var(--accent-color);
+   
 }
-
-
-
 
 
 
