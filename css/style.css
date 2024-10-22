@@ -1735,26 +1735,23 @@ a.link:hover {
 
 
 
-.marketing-img-card {
-    height: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 2px;
-    border: 3px solid var(--accent-color);
-    transition: transform 0.8s ease-in-out; /* Slower transition */
-}
+
 
 .marketing-img-card img {
     overflow: hidden;
-    height: fit-content;
+    border-radius: 12px;
     object-fit: contain;
-    transition: transform 0.8s ease-in-out; /* Slower transition for the image */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: transform 0.8s ease-in-out; 
+height: 400px !important;
+    transition: transform 0.8s ease-in-out; 
 }
 
-.marketing-img-card:hover {
-    transform: scale(1.10);
+.marketing-img-card img:hover {
+    transform: scale(1.08);
     z-index: 99;
+    border: 3px solid var(--accent-color);
+background-color: white;
 }
 
 
