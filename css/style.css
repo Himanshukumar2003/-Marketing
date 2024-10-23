@@ -1134,6 +1134,7 @@ a {
     /* overflow: hidden; */
 }
 
+
 .r-progress-bar .progress-value {
     height: 100%;
     width: calc(var(--progress) * 1%);
@@ -1803,7 +1804,7 @@ a.link:hover {
 }
 
 .destination {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.3em;
     margin-top: 20px;
     font-weight: 400;
@@ -1875,7 +1876,7 @@ a.link:hover {
 }
 
 .footer .info {
-    padding: 60px 0 30px;
+    padding: 40px 0 30px;
     border-bottom: 1px solid #2d3841;
 }
 
