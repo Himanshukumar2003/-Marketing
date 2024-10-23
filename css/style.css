@@ -1134,7 +1134,6 @@ a {
     /* overflow: hidden; */
 }
 
-
 .r-progress-bar .progress-value {
     height: 100%;
     width: calc(var(--progress) * 1%);
