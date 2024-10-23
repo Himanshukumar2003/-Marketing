@@ -478,7 +478,7 @@ background-color: var(--light-red-color);
 }
 
 .btn-accent {
-    background-color:ver(--light-red-color);
+    background-color:var(--light-red-color);
     color: white;
     transition: all 0.5s;
 }
