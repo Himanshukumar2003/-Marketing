@@ -5,8 +5,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Heaven Media - Our Team</title>
 </head>
+
+<style>
+    .footer {
+        background-color: #181e23;
+        color: #dadfe2;
+        position: relative
+    }
+
+    .footer *,
+    .footer .wp-block-calendar table caption,
+    .footer .wp-block-calendar table tbody {
+        color: #dadfe2
+    }
+
+    .footer input,
+    .footer textarea,
+    .footer select,
+    .footer .nice-select,
+    .footer .nice-select .list,
+    .footer .wp-caption {
+        background-color: red;
+        color: #fff !important
+    }
+
+    .footer input::placeholder,
+    .footer textareat::placeholder {
+        color: #fff
+    }
+
+    .footer .nice-select .option:hover,
+    .footer .nice-select .option.focus,
+    .footer .nice-select .option.selected.focus {
+        color: var(--dark-themes)
+    }
+
+    @media(max-width:480px) {
+        .footer {
+            text-align: center
+        }
+    }
+
+    .footer .info {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #2d3841;
+        overflow: hidden
+    }
+
+    @media(max-width:1024px) {
+        .footer .info {
+            padding-bottom: 0
+        }
+    }
+
+    @media(max-width:799px) {
+        .footer .info {
+            display: flex;
+            flex-direction: column
+        }
+    }
+
+    .footer .info .crumina-heading .heading-title {
+        color: #fff;
+        margin: 0
+    }
+
+    .footer .info .socials {
+        margin: 20px 0 0
+    }
+
+    @media(max-width:1024px) {
+        .footer .info .socials {
+            margin-bottom: 30px
+        }
+    }
+
+    @media(max-width:320px) {
+        .footer .info .socials .social__item {
+            margin-right: 15px
+        }
+    }
+
+    .footer .contacts {
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center
+    }
+
+    @media(max-width:570px) {
+        .footer .contacts {
+            display: block
+        }
+    }
+
+    .footer .contacts .title {
+        font-size: 20px;
+        transition: all .3s ease
+    }
+
+    @media(max-width:1024px) {
+        .footer .contacts .title {
+            font-size: 16px
+        }
+    }
+
+    .footer .contacts .sub-title {
+        margin-bottom: 0
+    }
+
+    .footer .contacts .content a {
+        color: inherit
+    }
+
+    .footer .contacts .content .title:hover {
+        color: var(--primary-accent-color)
+    }
+
+    .footer a {
+        color: #dbd3d3;
+        transition: all .3s ease
+    }
+
+    .footer a:hover {
+        color: var(--primary-accent-color)
+    }
+
+    .footer .sub-footer {
+        padding: 20px 15px;
+        background-color: #12171b;
+        text-align: center;
+        position: relative;
+        font-size: 14px
+    }
+
+    .footer .sub-footer a {
+        color: var(--white-color);
+        opacity: .5
+    }
+
+    .footer .sub-footer a:hover {
+        color: var(--primary-accent-color);
+        opacity: 1
+    }
+
+    .footer .sub-footer.medium {
+        padding: 25px 0
+    }
+
+    .footer .sub-footer.small {
+        padding: 15px 0
+    }
+
+    @media(max-width:768px) {
+        .footer .sub-footer {
+            padding: 25px 0
+        }
+    }
+
+    .footer .sub-footer span {
+        font-size: 14px;
+        color: #959192
+    }
+
+    .footer.js-fixed-footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        z-index: 1;
+        transition-property: all;
+        transition-duration: .4s;
+        transition-timing-function: cubic-bezier(0, 0, 0, 1)
+    }
+
+    @media(max-width:1280px) {
+        .footer.js-fixed-footer {
+            position: relative
+        }
+    }
+
+    .footer .w-post-category .category-post-item:hover .post-count {
+        color: rgba(255, 255, 255, .35)
+    }
+
+    .footer .widget_rss .heading .rsswidget,
+    .footer .widget_rss .crumina-heading .rsswidget {
+        color: #fff
+    }
+</style>
 
 <body>
     <!-- Scripts -->
@@ -14,12 +209,12 @@
 
     <!-- Header -->
     <div class="transparent bg-red-color" id="navbar">
-                <div class="r-container">
+        <div class="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
                         <a class="navbar-brand" href="index.html">
-                            <img src="image/logo.png" alt="hevn media" class="img-fluid"/>
+                            <img src="image/logo.png" alt="hevn media" class="img-fluid" />
                         </a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -125,7 +320,7 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <div>
-                                    <img src="image/ttd.png" alt="" class="img-fluid" width="170"/>
+                                    <img src="image/ttd.png" alt="" class="img-fluid" width="170" />
                                 </div>
                                 <h6 class="fw-semibold font-1 m-0">Pepper Potts</h6>
                                 <span class="font-1 fw-semibold">CEO Progrez</span>
@@ -149,7 +344,7 @@
                     <div class="col">
                         <div class="position-relative px-5">
                             <img src="image/image-900x900-1.jpg" alt=""
-                                class="img-fluid border-bottom border-6 rounded-3 border-accent-color"/>
+                                class="img-fluid border-bottom border-6 rounded-3 border-accent-color" />
                             <div class="floating-left-custom">
                                 <div class="card card-dark px-xl-5 px-3 py-3">
                                     <div class="d-flex flex-column text-center">
@@ -179,16 +374,16 @@
                     <h3 class="font-1 fw-semibold lh-1">OUR COLLABORATORS</h3>
                     <div class="row row-cols-xl-4 row-cols-1">
                         <div class="col mb-3">
-                            <img src="image/logoipsum-1.png" alt="" class="img-fluid"/>
+                            <img src="image/logoipsum-1.png" alt="" class="img-fluid" />
                         </div>
                         <div class="col mb-3">
-                            <img src="image/logoipsum-2.png" alt="" class="img-fluid"/>
+                            <img src="image/logoipsum-2.png" alt="" class="img-fluid" />
                         </div>
                         <div class="col mb-3">
-                            <img src="image/logoipsum-3.png" alt="" class="img-fluid"/>
+                            <img src="image/logoipsum-3.png" alt="" class="img-fluid" />
                         </div>
                         <div class="col mb-3">
-                            <img src="image/logoipsum-4.png" alt="" class="img-fluid"/>
+                            <img src="image/logoipsum-4.png" alt="" class="img-fluid" />
                         </div>
                     </div>
                 </div>
@@ -475,152 +670,117 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <div class="bg-dark-color section py-0">
-            <div class="r-container text-white">
-                <div class="border-bottom px-xl-0 py-5 px-4">
-                    <div class="row row-cols-xl-3 row-cols-1">
-                        <div class="col">
-                            <div class="d-flex flex-column gap-4">
-                                <div>
-                                    <img src="image/Logo.png" alt="" class="img-fluid logo-image" width="300">
-                                </div>
-                                <p>
-                                    Our mission is to empower businesses like yours with the knowledge and tools needed
-                                    to
-                                    thrive in today’s competitive landscape.
-                                </p>
-                            </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row info ">
+                <div class="col-lg-7 col-sm-12">
+                    <div class="crumina-heading widget-heading">
+                        <h4 class="heading-title" itemprop="name">Seosight Company!</h4>
+                        <div class="heading-decoration">
+                            <span class="first"></span>
+                            <span class="second"></span>
                         </div>
-                        <div class="col">
-                            <h5 class="font-1 fs-5 fw-semibold mb-3">Quick Links</h5>
-                            <div class="row row-cols-xl-2 row-cols-1">
-                                <div class="col mb-3">
-                                    <ul class="list font-1 gap-3">
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Home</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>About Us</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Our Team</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Services</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Pricing</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col mb-3">
-                                    <ul class="list font-1 gap-3">
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>FAQs</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Blog</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link d-flex flex-row gap-3 align-items-center">
-                                                <i class="rtmicon rtmicon-arrow-right accent-color"></i>
-                                                <span>Privacy & Policy</span>
-                                            </a>
-                                        </li>
-                                    </ul>
+                        <p class="destination">
+                            Qolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibham liber tempor cum
+                            soluta nobis eleifend option congue nihil uarta decima et quinta. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                            commodo consequat eleifend option nihil. Investigationes demonstraverunt lectores legere me
+                            lius quod ii legunt saepius parum claram. </p>
+                    </div>
+                    <div class="socials">
+                        <a href="#" class="social__item" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"
+                                style="font-size: 30px; color: blue;"></i></a>
+                        <a href="#" class="social__item" target="_blank" rel="nofollow"><i class="fab fa-twitter"
+                                style="font-size: 30px; color: skyblue;"></i></a>
+                        <a href="#" class="social__item" target="_blank" rel="nofollow"><i class="fab fa-google-plus-g"
+                                style="font-size: 30px; color: red;"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12">
+                    <div class="row">
+                        <div class="widget w-custom-menu col-lg-12">
+                            <div class="crumina-heading widget-heading">
+                                <h4 class="heading-title">Services Provided</h4>
+                                <div class="heading-decoration">
+                                    <span class="first"></span>
+                                    <span class="second"></span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex flex-column gap-3 ps-xl-4">
-                                <span class="font-1 fs-5 fw-semibold">Subscribe Newsletter</span>
-                                <p>
-                                    Explore our news and blog content today and take the first step towards unlocking
-                                    your
-                                    full marketing potential.
-                                </p>
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                                        <div id="liveToast"
-                                            class="toast success_msg_subscribe bg-dark-transparent text-white"
-                                            role="alert" aria-live="assertive" aria-atomic="true">
-                                            <div class="d-flex">
-                                                <div class="toast-body">
-                                                    Your Subscribe Send Successfully!.
-                                                </div>
-                                                <button type="button" class="btn me-2 m-auto text-white"
-                                                    data-bs-dismiss="toast" aria-label="Close">
-                                                    <i class="fa-solid fa-xmark"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <form
-                                        class="d-flex flex-column h-100 justify-content-center w-100 needs-validation form"
-                                        novalidate="">
-                                        <input type="text" name="action" value="subscribe" hidden="">
-                                        <div class="d-flex flex-column gap-3">
-                                            <input type="email" class="form-control rounded-pill px-4 py-3"
-                                                placeholder="Your Email" name="email" required="">
-                                            <button
-                                                class="btn btn-accent submit_subscribe font-1 rounded-pill fw-semibold"
-                                                type="submit">Send Mail</button>
-                                            <div class="invalid-feedback text-white">
-                                                Please provide a valid email format (e.g.,
-                                                user@example.com).
-                                            </div>
-                                        </div>
-                                    </form>
+                            <div class="menus-wrap ovh row">
+                                <div class="col-md-6">
+                                    <ul class="list--triangle">
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> SEO Services</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Pay-per-click</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Social Media</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Web Analytics</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Web Development</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list--triangle">
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Virtual Marketing</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Email Marketing</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Keyword Analytics</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Content Management</a></li>
+                                        <li><a href="#"><i class="fa fa-caret-right"></i> Blog Management</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-xl-between py-4 flex-xl-row flex-column justify-content-center gap-3 text-center align-items-center">
-                    <span class=" accent-color">Copyright 2024 © All Right Reserved Design by Heaven Media</span>
-                    <div class="social-container gap-2 justify-content-center">
-                        <a href="https://www.facebook.com/" class="social-item rounded-circle">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.twitter.com/" class="social-item rounded-circle">
-                            <i class="fa-brands fa-x-twitter"></i>
-                        </a>
-                        <a href="https://www.pinterest.com/" class="social-item rounded-circle">
-                            <i class="fa-brands fa-pinterest-p"></i>
-                        </a>
-                        <a href="https://www.youtube.com/" class="social-item rounded-circle">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="contacts-item">
+                        <i class="bi bi-telephone-fill" style="font-size: 50px; margin-right: 10px;"></i>
+
+                        <div class="content">
+                            <p href="tel:880056789011" class="title" itemprop="telephone">8 800 567.890.11</p>
+                            <span class="sub-title">Mon-Fri 9am-6pm</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="contacts-item">
+
+                        <i class="bi bi-envelope-fill" style="font-size: 50px; margin-right: 10px;"></i>
+
+                        <div class="content">
+                            <p href="mailto:info@seosight.com" class="title" itemprop="email">info@seosight.com</p>
+                            <span class="sub-title">Online support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="contacts-item">
+
+                        <i class="bi bi-geo-alt-fill" style="font-size: 50px; margin-right: 10px;"></i>
+
+                        <div class="content">
+                            <p class="title" itemprop="address">Melbourne, Australia</p>
+                            <span class="sub-title">795 South Park Avenue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class=" sub-footer mt-4">
+            <div class="text-center">
+                <span>&copy; 2023 Seosight Company. All Rights Reserved</span>
             </div>
         </div>
     </footer>
 
 
+
     <!-- scripts -->
+
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
     <script src="js/vendor/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
