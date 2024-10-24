@@ -2015,6 +2015,7 @@ a.link:hover {
 
 .image-container {
     position: relative;
+    height: 100% !important;
 }
 
 .image-container::after {
@@ -2085,7 +2086,6 @@ a.link:hover {
 .why-choose-heading {
     color: #ef2422;
     font-weight: bold;
-    margin-bottom: 1rem;
 }
 
 .service-icon {
@@ -2113,7 +2113,7 @@ a.link:hover {
 
 }
 
-
-.img-size {
-    height: 74% !important;
+.img-section {
+    height: 333px;
+    overflow: hidden;
 }
