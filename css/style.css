@@ -1801,6 +1801,7 @@ a.link:hover {
 .footer {
     background-color: #181e23;
     position: relative;
+    padding-top: 6em;
 }
 
 .destination {
@@ -1985,4 +1986,134 @@ a.link:hover {
         justify-content: center;
         margin: 30px 0px;
     }
+}
+
+
+
+/* why */
+.section-title {
+    color: #dc3545;
+    font-weight: bold;
+    border-left: 3px solid #dc3545;
+    padding-left: 10px;
+}
+
+.main-title {
+    color: black;
+    font-weight: bold;
+}
+
+.icon {
+    color: #dc3545;
+    font-size: 2rem;
+}
+
+.feature-title {
+    color: black;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: #dc3545;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.trust-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trust-badge i {
+    color: #dc3545;
+}
+
+.boder-line-left {
+    border-left: 3px solid red;
+}
+
+.icons {
+    color: red !important;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 12%);
+    line-height: 70px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@keyframes flipY {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+.icons {
+    display: inline-block;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* Preserves 3D transformation */
+}
+
+.icons:hover {
+    animation: flipY 0.6s forwards;
+    /* Triggers flip animation on hover */
+}
+
+/* 2 */
+
+
+.why-choose-heading {
+    color: #ef2422;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    background-color: #ef2422;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.service-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+    padding: 40px 40px 40px 0px;
+    align-items: start;
+
+}
+
+
+.img-size {
+    height: 74% !important;
 }
