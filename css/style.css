@@ -2128,6 +2128,12 @@ a.link:hover {
 }
 
 
+.blog-card .card-body {
+    padding: 20px !important;
+}
+
+
+
 .blog-card:hover .card-image img {
     transform: scale(1.2);
 }
